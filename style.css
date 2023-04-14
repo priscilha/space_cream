@@ -14,9 +14,34 @@
     --font-title: 'Palanquin', sans-serif;
     --font-text: 'Staatliches', cursive;
 
+    font-size: 62.5%;
+    --fs-header:4.0rem; 
+    --fs-text: 2.0rem;
 
+}
 
-
+header{
+    background: var(--color-header);
+    width: 38.4rem;
+ 
 
 
 }
+
+header h1{
+    background: var(--color-header-sm);
+    font-family: var(--font-title);
+    font-size: var(--fs-header);
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 5%;
+    line-height: 3.4rem;
+ 
+}
+
+main p{
+    font-family: var(--font-text);
+    font-size: var(--fs-text);
+}
+
+
