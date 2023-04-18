@@ -54,6 +54,7 @@ header {
     display: flex;
     flex-direction: column;
     text-align: center;
+  
 }
 
 
@@ -74,16 +75,58 @@ h1 {
 
 p {
     padding: 3rem 4rem 3rem;
+    text-align: center;
+}
+main{
+    display: grid;
+    gap: 3.6rem;
+
 }
 
 main p {
     font-family: var(--font-text);
     font-size: var(--fs-text);
-    display: grid;
+  
+   
 }
 
 h1,
 h2 {
     font-family: var(--ff-heading);
     font-weight: 400;
+}
+
+.card {
+    position: relative;
+    
+}
+
+.card span{
+    position: absolute;
+    right: 1.6rem;
+    top: 1.6rem;
+    z-index: 2;
+
+    font-size: var(--fs-heading-small);
+    font-weight: 400;
+    color: var(--color-text);
+
+    background: var(--color-detail);
+    height: 3rem;
+    width: 11.2rem;
+    border-radius: 2rem;
+    text-align: center;
+    padding: 0.5rem;
+    letter-spacing: 0.05rem;
+   
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    align-items: center;
+    border-radius: 2.0rem;
+
+   
 }
