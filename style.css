@@ -1,47 +1,89 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --color-text:#4A4E69;
-    --color-header:#8E9AAF;
-    --color-header-sm:#CBC0D3;
-    --color-detail:#FEEAFA;
-    --color-bg:#EFF1FF;
+:root {
 
-    --font-title: 'Palanquin', sans-serif;
-    --font-text: 'Staatliches', cursive;
+
+    --hue1: 233;
+    --hue2: 300;
+
+    --color-header: hsla(var(--hue1), 17%, 62%, 1);
+    --color-header-sm: hsla(var(--hue2), 18%, 79%, 1);
+    --color-text: hsla(var(--hue1), 17%, 35%, 1);
+
+    --color-detail: hsla(var(--hue2), 91%, 96%, 1);
+    --color-bg: hsl(var(--hue1), 100%, 97%);
+
+    --ff-heading: 'Staatliches', sans-serif;
+    --ff-texting: 'Palanquin', sans-serif;
 
     font-size: 62.5%;
-    --fs-header:4.0rem; 
-    --fs-text: 2.0rem;
+    --fs-heading: 4rem;
+    --fs-heading-small: 2rem;
+    --fs-texting: 1.6rem;
 
 }
 
-header{
-    background: var(--color-header);
-    width: 38.4rem;
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
  
+   
+    line-height: 2rem;
+
 
 
 }
 
-header h1{
+.page {
+    max-width: 400px;
+    margin: 0 auto 5rem;
+}
+
+.img {
+    padding: 3rem 0;
+
+
+}
+
+header {
+    background: var(--color-header);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+h1 {
     background: var(--color-header-sm);
     font-family: var(--font-title);
+    font-size: 4rem;
+    text-shadow: 0px 2px 2px;
     font-size: var(--fs-header);
     color: #ffffff;
-    text-transform: uppercase;
+    font-size: var(--fs-heading);
+
     letter-spacing: 5%;
     line-height: 3.4rem;
- 
+    
+
 }
 
-main p{
+p {
+    padding: 3rem 4rem 3rem;
+}
+
+main p {
     font-family: var(--font-text);
     font-size: var(--fs-text);
+    display: grid;
 }
 
-
+h1,
+h2 {
+    font-family: var(--ff-heading);
+    font-weight: 400;
+}
