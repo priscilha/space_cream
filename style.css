@@ -89,14 +89,19 @@ h1 {
 p {
     padding: 3rem 4rem 3rem;
     text-align: center;
+    
     font-family: var(--ff-texting);
     font-size: var(--fs-texting);
+   
+  
+    
 }
 main{
     display: grid;
     gap: 3.6rem;
     padding: 0 3rem;
     max-width: 400px;
+    margin: auto;
 
 }
 
@@ -133,8 +138,10 @@ h2 {
 
     animation-name: topDown;
     animation-duration: 700ms;
-    animation-delay: 300ms;
+    animation-delay: 500ms;
     animation-fill-mode: backwards;
+
+ 
    
 }
 
@@ -154,6 +161,8 @@ h2 {
 }
 
 
+
+
 @keyframes downTop {
     0%{
         opacity: 0;
@@ -167,7 +176,7 @@ h2 {
     
 }
 
-@keyframes topdown {
+@keyframes topDown {
     0%{
         opacity: 0;
         transform: translateY(-15px);
