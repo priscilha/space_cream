@@ -6,7 +6,6 @@
 
 :root {
 
-
     --hue1: 233;
     --hue2: 300;
 
@@ -29,21 +28,15 @@
 
 body {
     background-color: var(--color-bg);
-    color: var(--color-text);
- 
-   
-    line-height: 2rem;
+    color: var(--color-text);  
+    line-height: 2rem; 
     
-
-
-
 }
 
 .page {
     
     margin: 0 auto 5rem;
 }
-
 
 
 header {
@@ -54,13 +47,11 @@ header {
     margin: 0 auto;
     align-items: center;
     width: 100vw;
-   
-  
+     
 }
 
 header img {
     padding-bottom: 3.2rem ;
-
 
 }
 
@@ -83,19 +74,20 @@ h1 {
     padding: 1rem 0;
     width: 100vw;
     
-
 }
 
 p {
     padding: 3rem 4rem 3rem;
-    text-align: center;
+    text-align:center;
+    
+  
     
     font-family: var(--ff-texting);
-    font-size: var(--fs-texting);
-   
+    font-size: var(--fs-texting);    
   
     
 }
+
 main{
     display: grid;
     gap: 3.6rem;
@@ -104,7 +96,6 @@ main{
     margin: auto;
 
 }
-
 
 
 h1,
@@ -140,8 +131,6 @@ h2 {
     animation-duration: 700ms;
     animation-delay: 500ms;
     animation-fill-mode: backwards;
-
- 
    
 }
 
@@ -157,10 +146,7 @@ h2 {
     animation-delay: 300ms;
     animation-fill-mode: backwards;
 
-   
 }
-
-
 
 
 @keyframes downTop {
